@@ -8,4 +8,12 @@ import { Component,OnInit } from '@angular/core';
 export class AppComponent {
   title = 'app';
 }
+export class NzDemoLayoutTriggerComponent implements OnInit {
+  isCollapsed = false;
 
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
+}
