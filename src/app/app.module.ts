@@ -10,6 +10,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { ListInfoComponent } from './list-info/list-info.component';
 import { LoginComponent } from './login/login.component';
 
+
+import { RouterModule } from '@angular/router';
+import {appRoutes} from './app.routes';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,7 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    NgZorroAntdModule.forRoot()
+    NgZorroAntdModule.forRoot({extraFontName: 'appRoutes', extraFontUrl: 'appRoutes'})
   ],
   bootstrap: [AppComponent]
 })
