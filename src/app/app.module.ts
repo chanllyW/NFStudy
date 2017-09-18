@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-// import { LayoutComponent } from './layout/layout.component';
 import { ListInfoComponent } from './list-info/list-info.component';
 import { LoginComponent } from './login/login.component';
 
@@ -18,16 +17,15 @@ import {appRoutes} from './app.routes';
   declarations: [
     AppComponent,
     HomeComponent,
-    // LayoutComponent,
     ListInfoComponent,
     LoginComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    NgZorroAntdModule.forRoot({extraFontName: 'appRoutes', extraFontUrl: './app.routes.ts'})
+    NgZorroAntdModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
   ],
   bootstrap: [AppComponent]
 })

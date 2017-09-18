@@ -14,10 +14,11 @@ export const appRoutes = [
     },
     {
         path: 'login',
-        component: 'LoginComponent'
+        component: LoginComponent
     },
     {
-		path:'**',//fallback router must in the last
-		loadChildren:'./home/home.module#HomeModule'
-	}
+        path: 'home',
+        component: HomeComponent
+    }
+
 ]
