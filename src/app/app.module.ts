@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { ListInfoComponent } from './list-info/list-info.component';
 import { LoginComponent } from './login/login.component';
 
-
 import { RouterModule } from '@angular/router';
 import {appRoutes} from './app.routes';
 
