@@ -11,17 +11,20 @@ import { LoginComponent } from './login/login.component';
 
 import { RouterModule } from '@angular/router';
 import {appRoutes} from './app.routes';
+import { PostTableComponent } from './post-table/post-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ListInfoComponent,
-    LoginComponent
+    LoginComponent,
+    PostTableComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     BrowserAnimationsModule,
     NgZorroAntdModule.forRoot(),
     RouterModule.forRoot(appRoutes)

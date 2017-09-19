@@ -27,9 +27,3 @@ nz-layout {
 :host ::ng-deep .trigger:hover {
   color: #108ee9;
 }
-nz-sider {
-  background-color: #3c8dbc !important;
-}
-nz-sider ul {
-  background-color: #3c8dbc !important;
-}
