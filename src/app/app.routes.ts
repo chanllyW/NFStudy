@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ListInfoComponent } from './list-info/list-info.component';
 import { HomeComponent } from './home/home.component';
-
+import { PostTableComponent } from './post-table/post-table.component';
 
 export const appRoutes = [
     {
@@ -14,10 +14,15 @@ export const appRoutes = [
     },
     {
         path: 'login',
-        component: 'LoginComponent'
+        component: LoginComponent
     },
     {
-		path:'**',//fallback router must in the last
-		loadChildren:'./home/home.module#HomeModule'
-	}
+        path: 'home',
+        component: HomeComponent
+    },
+    {
+        path: 'posttable',
+        component: PostTableComponent
+    }
+
 ]
